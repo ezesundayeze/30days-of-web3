@@ -3,8 +3,7 @@ pragma solidity 0.8.27;
 
 import "forge-std/Test.sol";
 import "forge-std/console.sol";
-
-import "../src/HelloWorld.sol";
+import "../src/HelloWorld.assembly.sol"; // you can switch the files for assembly and solidity, it will still be the same result
 
 contract HelloTest is Test {
     Hello public hello;
@@ -15,7 +14,7 @@ contract HelloTest is Test {
     }
 
     // Test if the sayHello() function returns the expected string
-    function testSayHello() public view {
+    function testSayHelloResturnsHelloWorld() public view {
         bytes32 expected = "Hello World!";
         bytes32 result = hello.sayHello();
         console.log(string(abi.encodePacked(result)));
@@ -27,7 +26,7 @@ contract HelloTest is Test {
         );
     }
 
-    function testEmptyString() public view {
+    function testSayHelloDoesNotReturnEmptyString() public view {
         bytes32 result = hello.sayHello();
 
         assertTrue(
