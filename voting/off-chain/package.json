@@ -1,0 +1,14 @@
+{
+  "name": "merkle-proof",
+  "version": "1.0.0",
+  "main": "merkleproof.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "js-sha3": "^0.9.3"
+  }
+}

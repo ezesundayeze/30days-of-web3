@@ -1,0 +1,230 @@
+{
+    "contractName": "Hello",
+    "abi": [
+        {
+            "inputs": [],
+            "name": "sayHello",
+            "outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32"
+                }
+            ],
+            "stateMutability": "pure",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.27+commit.40a35a09\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"sayHello\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/ezesunday/Development/30days-of-web3/voting/src/HelloWorld.assembly.sol\":\"Hello\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"/Users/ezesunday/Development/30days-of-web3/voting/src/HelloWorld.assembly.sol\":{\"keccak256\":\"0x4cddf556c36f63955c7b103fd3e5772764bd11a1caf713022057b0cf10885215\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://053357a7e68fde1dd1d9837093033b83399aff53b4fff6854204b3ce3ffb9879\",\"dweb:/ipfs/QmY6kvMWu3ssjoXRQBvE2c44DXh81x2yS7H8VBKXu8iXSy\"]}},\"version\":1}",
+    "bytecode": "60808060405234601357607c908160188239f35b5f80fdfe6004361015600b575f80fd5b5f3560e01c63ef5fb05b14601d575f80fd5b346042575f3660031901126042576b48656c6c6f20576f726c642160a01b5f5260205ff35b5f80fdfea26469706673582212203126db9e3b86f85125f67092f6f6fd2360386d6abb7c12fb58c95b64c806054b64736f6c634300081b0033",
+    "deployedBytecode": "6004361015600b575f80fd5b5f3560e01c63ef5fb05b14601d575f80fd5b346042575f3660031901126042576b48656c6c6f20576f726c642160a01b5f5260205ff35b5f80fdfea26469706673582212203126db9e3b86f85125f67092f6f6fd2360386d6abb7c12fb58c95b64c806054b64736f6c634300081b0033",
+    "sourceMap": "57:329:0:-:0;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "57:329:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;57:329:0;;;;138:240;;;57:329;138:240;;57:329;138:240;57:329;;;",
+    "sourcePath": "/Users/ezesunday/Development/30days-of-web3/voting/src/HelloWorld.assembly.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.27+commit.40a35a09"
+    },
+    "ast": {
+        "absolutePath": "/Users/ezesunday/Development/30days-of-web3/voting/src/HelloWorld.assembly.sol",
+        "exportedSymbols": {
+            "Hello": [
+                9
+            ]
+        },
+        "id": 10,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "0.8",
+                    ".27"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "32:23:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "Hello",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 9,
+                "linearizedBaseContracts": [
+                    9
+                ],
+                "name": "Hello",
+                "nameLocation": "66:5:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "body": {
+                            "id": 7,
+                            "nodeType": "Block",
+                            "src": "128:256:0",
+                            "statements": [
+                                {
+                                    "AST": {
+                                        "nativeSrc": "147:231:0",
+                                        "nodeType": "YulBlock",
+                                        "src": "147:231:0",
+                                        "statements": [
+                                            {
+                                                "expression": {
+                                                    "arguments": [
+                                                        {
+                                                            "kind": "number",
+                                                            "nativeSrc": "185:1:0",
+                                                            "nodeType": "YulLiteral",
+                                                            "src": "185:1:0",
+                                                            "type": "",
+                                                            "value": "0"
+                                                        },
+                                                        {
+                                                            "kind": "number",
+                                                            "nativeSrc": "204:66:0",
+                                                            "nodeType": "YulLiteral",
+                                                            "src": "204:66:0",
+                                                            "type": "",
+                                                            "value": "0x48656C6C6F20576F726C64210000000000000000000000000000000000000000"
+                                                        }
+                                                    ],
+                                                    "functionName": {
+                                                        "name": "mstore",
+                                                        "nativeSrc": "161:6:0",
+                                                        "nodeType": "YulIdentifier",
+                                                        "src": "161:6:0"
+                                                    },
+                                                    "nativeSrc": "161:123:0",
+                                                    "nodeType": "YulFunctionCall",
+                                                    "src": "161:123:0"
+                                                },
+                                                "nativeSrc": "161:123:0",
+                                                "nodeType": "YulExpressionStatement",
+                                                "src": "161:123:0"
+                                            },
+                                            {
+                                                "expression": {
+                                                    "arguments": [
+                                                        {
+                                                            "kind": "number",
+                                                            "nativeSrc": "362:1:0",
+                                                            "nodeType": "YulLiteral",
+                                                            "src": "362:1:0",
+                                                            "type": "",
+                                                            "value": "0"
+                                                        },
+                                                        {
+                                                            "kind": "number",
+                                                            "nativeSrc": "365:2:0",
+                                                            "nodeType": "YulLiteral",
+                                                            "src": "365:2:0",
+                                                            "type": "",
+                                                            "value": "32"
+                                                        }
+                                                    ],
+                                                    "functionName": {
+                                                        "name": "return",
+                                                        "nativeSrc": "355:6:0",
+                                                        "nodeType": "YulIdentifier",
+                                                        "src": "355:6:0"
+                                                    },
+                                                    "nativeSrc": "355:13:0",
+                                                    "nodeType": "YulFunctionCall",
+                                                    "src": "355:13:0"
+                                                },
+                                                "nativeSrc": "355:13:0",
+                                                "nodeType": "YulExpressionStatement",
+                                                "src": "355:13:0"
+                                            }
+                                        ]
+                                    },
+                                    "evmVersion": "cancun",
+                                    "externalReferences": [],
+                                    "id": 6,
+                                    "nodeType": "InlineAssembly",
+                                    "src": "138:240:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "ef5fb05b",
+                        "id": 8,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "sayHello",
+                        "nameLocation": "87:8:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 2,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "95:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 5,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 4,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 8,
+                                    "src": "119:7:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bytes32",
+                                        "typeString": "bytes32"
+                                    },
+                                    "typeName": {
+                                        "id": 3,
+                                        "name": "bytes32",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "119:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bytes32",
+                                            "typeString": "bytes32"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "118:9:0"
+                        },
+                        "scope": 9,
+                        "src": "78:306:0",
+                        "stateMutability": "pure",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 10,
+                "src": "57:329:0",
+                "usedErrors": [],
+                "usedEvents": []
+            }
+        ],
+        "src": "32:564:0"
+    },
+    "functionHashes": {
+        "sayHello()": "ef5fb05b"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "24800",
+            "executionCost": "81",
+            "totalCost": "24881"
+        },
+        "external": {
+            "sayHello()": "122"
+        }
+    }
+}
