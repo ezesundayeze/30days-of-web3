@@ -8,9 +8,9 @@ In this 30 days, I'll build 30 DApps and share my learnings.
 
 ### Here is a list of the tasks for each day.
 
-- [ ] [**Day 1: Hello Blockchain**](https://github.com/ezesundayeze/30days-of-web3/tree/main/hello-world)
+- [x] [**Day 1: Hello Blockchain**](https://github.com/ezesundayeze/30days-of-web3/tree/main/hello-world)
       Write a simple smart contract that stores and retrieves a message from the blockchain.
-- [ ] **Day 2: Simple Token (ERC-20)**  
+- [x] [**Day 2: Simple Token (ERC-20)**][https://github.com/ezesundayeze/30days-of-web3/blob/main/erc-20-token/src/ERC20WithOZ.sol]  
        Create an ERC-20 token using the Ethereum standard. Implement basic functions like `mint`, `transfer`, and `balanceOf`.
 - [ ] **Day 3: Voting System**  
        Build a decentralized voting system where users can cast votes on various options.
