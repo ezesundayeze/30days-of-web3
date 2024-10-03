@@ -1,2 +1,4 @@
 .env
 ./.env
+
+voting/off-chain/node_modules
