@@ -12,3 +12,6 @@ contract Hello {
         }
     }
 }
+
+// Deployed contract on Sepolia testnet, 16 gas less than the Hello World using Solidity without assembly
+// https://sepolia.etherscan.io/tx/0x3afc5b042ed6d7b47caad96c80fcb23c12aec7012681a7ef0ab61c6e97c047c0
