@@ -12,7 +12,7 @@ In this 30 days, I'll build 30 DApps and share my learnings.
       Write a simple smart contract that stores and retrieves a message from the blockchain.
 - [x] [**Day 2: Simple Token (ERC-20)**](https://github.com/ezesundayeze/30days-of-web3/blob/main/erc-20-token/src/ERC20WithOZ.sol)  
        Create an ERC-20 token using the Ethereum standard. Implement basic functions like `mint`, `transfer`, and `balanceOf`.
-- [ ] [**Day 3: Voting System**](https://github.com/ezesundayeze/30days-of-web3/tree/main/voting)
+- [x] [**Day 3: Voting System**](https://github.com/ezesundayeze/30days-of-web3/tree/main/voting)
       Build a decentralized voting system where users can cast votes on various options.
 - [ ] **Day 4: Crowdfunding Contract**  
        Develop a smart contract where people can contribute funds, and once a target is reached, the funds can be withdrawn by the campaign creator.
