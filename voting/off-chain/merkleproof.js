@@ -1,40 +1,29 @@
-const { keccak256 } = require('js-sha3');
+const { SimpleMerkleTree } = require('@openzeppelin/merkle-tree');
+const { solidityPackedKeccak256 } = require('ethers');
 
-function computeMerkleRoot(identityNumbers) {
-    if (identityNumbers.length === 0) {
-        throw new Error("No identity numbers provided.");
-    }
-
-    // Step 1: Hash the identity numbers
-    let hashedLeaves = identityNumbers.map(identity => keccak256(identity));
-
-    // Step 2: Construct the Merkle tree
-    while (hashedLeaves.length > 1) {
-        const newLevel = [];
-
-        for (let i = 0; i < hashedLeaves.length; i += 2) {
-            // If there's an odd leaf, duplicate it to hash with itself
-            const left = hashedLeaves[i];
-            const right = i + 1 < hashedLeaves.length ? hashedLeaves[i + 1] : left;
-            // Concatenate and hash the pair
-            const combinedHash = keccak256(left + right);
-            newLevel.push(combinedHash);
-        }
-
-        hashedLeaves = newLevel; // Move up to the new level
-    }
-
-    // The only element left is the Merkle root
-    return hashedLeaves[0];
-}
-
-// Example usage
-const identityNumbers = [
-    "123456789", // Replace with actual voter identity numbers
+function merkleTree(identities = [
+    "123456789",
     "987654321",
     "111223344",
     "556677889"
-];
+], identity = "123456789") {
+    // Array of leaf nodes (in your case, the identities or data). In a real situation, you'll get this data from an authorized identity verification entity.
+    // Leaves represent identities, posibly internation passport numbers, a leave is the individual passport
+    let leaves = identities.map(identity =>
+        solidityPackedKeccak256(['string'], [identity])
+    );
 
-const merkleRoot = computeMerkleRoot(identityNumbers);
-console.log("Merkle Root:", merkleRoot);
+    // Create Merkle tree
+    const tree = SimpleMerkleTree.of(leaves);
+
+    // Get Merkle root
+    const root = tree.root;
+
+    const leaf = solidityPackedKeccak256(['string'], [identity]);
+    const proof = tree.getProof(leaf);
+
+    return { proof, root }
+}
+
+console.log(merkleTree())
+
