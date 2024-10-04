@@ -1,10 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.27;
-
 import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 
 contract MerkleTreeElection {
-    address owner;
+    address public owner;
 
     error Unauthorized();
     error AlreadyVoted();
@@ -34,27 +33,23 @@ contract MerkleTreeElection {
     function vote(
         uint256 candidateId,
         bytes32[] memory merkleProof,
-        bytes32 leafHash
+        bytes32 leafHash // Identity, e.g international passport
     ) public {
-        // Step 1: Check if the voter has already voted using the leaf hash.
-        require(!hasVoted[leafHash], AlreadyVoted());
-
-        // Step 2: Ensure the Merkle proof is valid before proceeding using OpenZeppelin's MerkleProof library.
-        bool isValidProof = MerkleProof.verify(
-            merkleProof,
-            merkleRoot,
-            leafHash
+        require(!(hasVoted[leafHash]), AlreadyVoted());
+        require(
+            MerkleProof.verify(merkleProof, merkleRoot, leafHash),
+            InvalidProof()
         );
-        require(isValidProof, InvalidProof());
 
-        // Step 3: Record the vote if the proof is valid.
         candidateVotes[candidateId]++;
         totalVotes++;
 
-        // Mark the voter as having voted to prevent double voting.
         hasVoted[leafHash] = true;
 
-        // Emit the Voted event to log the vote details.
         emit Voted(leafHash, candidateId);
+    }
+
+    function getVotes(uint256 candidateId) public view returns (uint256) {
+        return candidateVotes[candidateId];
     }
 }
