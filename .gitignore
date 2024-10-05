@@ -2,3 +2,6 @@
 ./.env
 
 voting/off-chain/node_modules
+voting/out
+crowd-funding/out
+
