@@ -16,7 +16,7 @@ In this 30 days, I'll build 30 DApps and share my learnings.
       Build a decentralized voting system where users can cast votes on various options.
 - [x] [**Day 4: Crowdfunding Contract**](https://github.com/ezesundayeze/30days-of-web3/tree/main/crowd-funding)  
        Develop a smart contract where people can contribute funds, and once a target is reached, the funds can be withdrawn by the campaign creator.
-- [ ] **Day 5: [Decentralized Escrow**](https://github.com/ezesundayeze/30days-of-web3/tree/main/escrow)  
+- [ ] [**Day 5: Decentralized Escrow**](https://github.com/ezesundayeze/30days-of-web3/tree/main/escrow)  
        Create an escrow contract where a buyer sends funds, and once the seller delivers a product, the buyer can release the funds to the seller.
 - [ ] **Day 6: Auction System**  
        Build a basic decentralized auction. Users can place bids, and the highest bidder wins after a certain time.
